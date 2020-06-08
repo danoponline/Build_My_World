@@ -2,17 +2,18 @@
 
 Message for mentors: <br>
 
-To build this repo, run
+To build this repo, clone and cd into this repo, and then
 ```
-cd /home/workspace/Build_My_World/build
+mkdir build
+cd build
 cmake ../
 make
 ```
 Before running Gazebe, run the following,
 ```
-export GAZEBO_PLUGIN_PATH=${GAZEBO_PLUGIN_PATH}:/home/workspace/Build_My_World/build/
+export GAZEBO_PLUGIN_PATH=${GAZEBO_PLUGIN_PATH}:<your path to Build_My_World>/build
 ```
 Then,
 ```
-gazebo /home/workspace/Build_My_World/world/myHouse
+gazebo <your path to Build_My_World>/world/myHouse
 ```
